@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+
+$font-main: "Montserrat", sans-serif;
+
+$primary-color: #151515;
+$secondary-color: #151515;
+$accent-color: rgb(250, 176, 5);
+$color-white: rgb(250, 251, 246);
+$color-blue: #183153;
+
+// #6F859B
+
+//Breakpoints
+$breakpoint-lg-phone: 600px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-laptop-lg: 1440px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-main;
+  color: $color-white;
+}
+
+a {
+  text-decoration: none;
+}
