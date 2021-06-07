@@ -29,3 +29,5 @@ const projects = [
       "A transaltor app built using HTML, SCSS AND JavaScript. This project allows an input to be translated from English to Morse, and vice versa. I was able to implement Unit testing using Jest in this project. The main functionality of the translation is based around two functions, which contain an object of alpha/numeric key: value pairs.",
   },
 ];
+
+export default projects;
