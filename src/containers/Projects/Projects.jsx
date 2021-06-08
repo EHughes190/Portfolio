@@ -1,11 +1,16 @@
 import React from "react";
 import styles from "./Projects.module.scss";
+import ProjectCard from "../../components/ProjectCard";
+import projects from "../../data/projects";
 
-const Projects = () => {
+const Projects = (props) => {
+  const getCard = (projectsObj) => <ProjectCard projects={projectsObj} />;
   return (
-    <>
-      <p>Projects works</p>
-    </>
+    <section className={styles.projects}>
+      <h3 className={styles.sectionHeading}>projects</h3>
+      <hr className={styles.line} />
+      <div className={styles.projectsContainer}>{projects.map(getCard)}</div>
+    </section>
   );
 };
 

@@ -69,13 +69,18 @@
     position: relative;
     top: 0%;
     left: 12.5%;
-    //transform: translate(-50%, -50%);
     height: 50vh;
     width: 75vw;
-    background: $color-white;
+    background: #383838;
     border: 2px solid $accent-color;
     border-radius: 10px;
     animation: drop 0.5s ease-in-out forwards;
+
+    .closeModalBtn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
 
     .links {
       position: absolute;
@@ -89,8 +94,10 @@
 
       .link__item {
         margin: 20px;
-        color: $primary-color;
+        color: $color-white;
         font-size: 30px;
+        border-bottom: 4px solid $primary-color;
+        padding: 5px;
       }
     }
   }

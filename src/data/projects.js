@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Flappy Clone",
-    img: "https://drive.google.com/file/d/1iw7YuEFkScd7cfvoVSPDedzmIMAwIJQG/view?usp=sharing",
+    img: "https://drive.google.com/uc?export=view&id=1iw7YuEFkScd7cfvoVSPDedzmIMAwIJQG",
     githubUrl: "https://github.com/EHughes190/Flappy-Clone",
     pagesUrl: "https://ehughes190.github.io/Flappy-Clone/",
     skills: ["HTML", "SCSS", "JavaScript"],
@@ -11,7 +11,7 @@ const projects = [
 
   {
     title: "JS Calculator",
-    img: "https://drive.google.com/file/d/1y0sa9038mNSdFNle8u0ARRdVMbgU94_-/view?usp=sharing",
+    img: "https://drive.google.com/uc?export=view&id=1y0sa9038mNSdFNle8u0ARRdVMbgU94_-",
     githubUrl: "https://github.com/EHughes190/JS-Calculator",
     pagesUrl: "https://ehughes190.github.io/JS-Calculator/",
     skills: ["HTML", "SCSS", "JavaScript", "Cypress"],
@@ -21,7 +21,7 @@ const projects = [
 
   {
     title: "Morse Translator",
-    img: "https://drive.google.com/file/d/1GNh0jJET9faNuolS1UFY7gHOR_HLHaaw/view?usp=sharing",
+    img: "https://drive.google.com/uc?export=view&id=1GNh0jJET9faNuolS1UFY7gHOR_HLHaaw",
     githubUrl: "https://github.com/EHughes190/morse-translator",
     pagesUrl: "https://ehughes190.github.io/morse-translator/",
     skills: ["HTML", "SCSS", "JavaScript", "Jest"],

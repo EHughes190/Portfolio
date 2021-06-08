@@ -10,7 +10,7 @@ import Contact from "../Contact";
 import Projects from "../Projects";
 //import NoMatch from "../NoMatch";
 
-const Routes = () => {
+const Routes = (props) => {
   return (
     <Switch>
       <Route exact path="/">
@@ -20,7 +20,7 @@ const Routes = () => {
         <About />
       </Route>
       <Route path="/Projects">
-        <Projects />
+        <Projects projects={props} />
       </Route>
       <Route path="/Contact">
         <Contact />

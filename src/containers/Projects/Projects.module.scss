@@ -1,0 +1,24 @@
+@import "../../base.scss";
+
+.projects {
+  .sectionHeading {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    padding: 0 0px 10px 0px;
+  }
+
+  .line {
+    width: 40%;
+    margin: auto;
+    height: 5px;
+    background-color: $accent-color;
+    border: none;
+  }
+
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
