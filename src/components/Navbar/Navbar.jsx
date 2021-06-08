@@ -1,41 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIgloo } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import { Squash as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
-  return (
-    <div className={styles.sticky}>
-      <nav className={styles.nav}>
-        {/* <a href="#landing-page"> */}
-        <Link to="/">
-          <FontAwesomeIcon icon={faIgloo} size="2x" />
-        </Link>
+  const [isOpen, setisOpen] = useState(false);
 
-        {/* </a> */}
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+  };
 
-        <ul className={styles.links}>
-          <li>
-            {/* <a href="#projects">Projects</a> */}
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            {/* <a href="#about">About</a> */}
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            {/* <a href="#contact">Contact</a> */}
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-        {/* <div class="hamburger">
-          <div id="hamburger__line1" class="hamburger__line"></div>
-          <div id="hamburger__line2" class="hamburger__line"></div>
-          <div id="hamburger__line3" class="hamburger__line"></div>
-        </div> */}
-      </nav>
+  const openNav = isOpen ? (
+    <div className={styles.menu}>
+      <ul className={styles.links}>
+        <NavLink exact to="projects" key="nav:projects">
+          <li className={styles.link__item}>Projects</li>
+        </NavLink>
+        <NavLink exact to="about" key="nav:about">
+          <li className={styles.link__item}>About</li>
+        </NavLink>
+        <NavLink exact to="contact" key="nav:contact">
+          <li className={styles.link__item}>Contact</li>
+        </NavLink>
+      </ul>
     </div>
+  ) : (
+    ""
+  );
+
+  const setActive = () => {
+    setisOpen(!isOpen);
+  };
+
+  return (
+    // <div className={styles.sticky}>
+    <nav className={styles.nav}>
+      <NavLink exact to="/" key="nav:home">
+        <FontAwesomeIcon icon={faIgloo} size="2x" />
+      </NavLink>
+      {openNav}
+      <Hamburger onToggle={setActive} />
+    </nav>
+    // </div>
   );
 };
 
