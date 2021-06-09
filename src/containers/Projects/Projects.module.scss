@@ -1,6 +1,7 @@
 @import "../../base.scss";
 
 .projects {
+  height: 100vh;
   .sectionHeading {
     text-align: center;
     font-size: 48px;
@@ -17,8 +18,10 @@
   }
 
   .projectsContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
