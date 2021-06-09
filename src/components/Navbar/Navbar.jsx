@@ -12,13 +12,8 @@ const Navbar = () => {
   };
 
   const openNav = isOpen ? (
-    <div className={styles.modal}>
+    <div onClick={setActive} className={styles.modal}>
       <div className={styles.menu}>
-        <Hamburger
-          className={styles.closeModalBtn}
-          toggled={isOpen}
-          onToggle={setActive}
-        />
         <ul className={styles.links}>
           <NavLink exact to="projects" key="nav:projects" onClick={setActive}>
             <li className={styles.link__item}>Projects</li>

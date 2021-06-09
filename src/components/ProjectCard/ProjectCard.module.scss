@@ -1,33 +1,79 @@
 @import "../../base.scss";
 
-.projectsCard {
-  margin: 20px;
-  width: 80%;
-  height: 50vh;
-  border: 2px solid $accent-color;
-  background-color: $primary-color;
-  border-radius: 5px;
+.projectsContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .projectsCard {
+    margin: 20px;
+    width: 80vw;
+    height: 40vh;
+    border: 2px solid $accent-color;
+    background-color: $primary-color;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  .cardImage {
+    .cardImage {
+      width: 100%;
+      height: 80%;
+      //padding: 5px;
+      //object-fit: contain;
+    }
+
+    .titleContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20%;
+      width: 100%;
+      background: $accent-color;
+      .title {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.cardExpanded {
+  margin: 20px;
+  width: 90vw;
+  height: 80vh;
+  border: 2px solid $accent-color;
+  background-color: $primary-color;
+  border-radius: 5px;
+
+  .cardImageExpanded {
     width: 100%;
-    height: 80%;
-    //padding: 5px;
-    //object-fit: contain;
+    height: 50%;
+    padding: 5px;
   }
 
-  .titleContainer {
+  .titleExpanded {
+    height: 10%;
+    padding: 5px;
+  }
+
+  .descContainer {
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
-    width: 100%;
-    background: $accent-color;
-    .title {
+    .desc {
+      font-size: 0.8em;
+      padding: 5px;
       text-align: center;
     }
+  }
+
+  .skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    padding: 5px;
   }
 }

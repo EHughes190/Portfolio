@@ -1,0 +1,27 @@
+@import "../../base.scss";
+
+.modalBackdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  .modalContentWrapper {
+    position: fixed;
+    width: 75%;
+    height: 75%;
+    background: $primary-color;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+
+    .modalContent {
+      color: $primary-color;
+    }
+  }
+}
