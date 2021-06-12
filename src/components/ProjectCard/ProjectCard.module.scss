@@ -48,7 +48,7 @@
 
   .cardImageExpanded {
     width: 100%;
-    height: 50%;
+    height: 40%;
     padding: 5px;
   }
 
@@ -57,15 +57,37 @@
     padding: 5px;
   }
 
+  .btnContainer {
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    .btn {
+      color: $color-white;
+      background-color: $color-blue;
+      border: 2px solid $color-lightblue;
+      border-radius: 10px;
+      font-size: 20px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn:active {
+      border: 3px solid $color-lightblue;
+    }
+  }
+
   .descContainer {
-    height: 30%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     .desc {
       font-size: 0.8em;
       padding: 5px;
-      text-align: center;
     }
   }
 

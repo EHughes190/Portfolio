@@ -12,7 +12,7 @@
     position: fixed;
     width: 75%;
     height: 75%;
-    background: $primary-color;
+    background: $color-white;
     margin: auto;
     bottom: 0;
     top: 0;
@@ -22,6 +22,25 @@
 
     .modalContent {
       color: $primary-color;
+
+      .links {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .link__item {
+          margin: 20px;
+          color: $primary-color;
+          font-size: 30px;
+          // border-bottom: 4px solid $primary-color;
+          padding: 5px;
+        }
+      }
     }
   }
 }

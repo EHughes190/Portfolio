@@ -7,8 +7,7 @@ $secondary-color: #151515;
 $accent-color: rgb(250, 176, 5);
 $color-white: rgb(250, 251, 246);
 $color-blue: #183153;
-
-// #6F859B
+$color-lightblue: #6f859b;
 
 //Breakpoints
 $breakpoint-lg-phone: 600px;
@@ -22,6 +21,7 @@ $breakpoint-laptop-lg: 1440px;
   box-sizing: border-box;
   font-family: $font-main;
   color: $color-white;
+  font-weight: 400;
 }
 
 a {
