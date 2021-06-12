@@ -41,6 +41,18 @@
         color: $accent-color;
         cursor: pointer;
       }
+
+      .emailText {
+        font-size: 1.5em;
+        padding: 49px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .emailText:hover {
+        color: $accent-color;
+        cursor: pointer;
+      }
     }
   }
 }
