@@ -11,7 +11,6 @@ const Home = () => {
       <section className={styles.landingPage}>
         <div className={styles.landingPageTitle}>
           <motion.h1
-            // initial={{ fontSize: "" }}
             animate={{ fontSize: "200%" }}
             transition={{ duration: 0.5 }}
             className={styles.landingPage__heading}
@@ -19,7 +18,6 @@ const Home = () => {
             ed hughes.
           </motion.h1>
           <motion.h3
-            // initial={{ fontSize: "100%" }}
             animate={{ fontSize: "200%" }}
             transition={{ duration: 0.5 }}
             className={styles.landingPage__subHeading}

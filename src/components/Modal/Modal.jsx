@@ -46,7 +46,7 @@ const Modal = (props) => {
                       key="nav:projects"
                       onClick={setActive}
                     >
-                      <li className={styles.link__item}>Projects</li>
+                      <li className={styles.link__item}>PROJECTS</li>
                     </NavLink>
 
                     <NavLink
@@ -55,7 +55,7 @@ const Modal = (props) => {
                       key="nav:about"
                       onClick={setActive}
                     >
-                      <li className={styles.link__item}>About</li>
+                      <li className={styles.link__item}>ABOUT</li>
                     </NavLink>
 
                     <NavLink
@@ -64,7 +64,7 @@ const Modal = (props) => {
                       key="nav:contact"
                       onClick={setActive}
                     >
-                      <li className={styles.link__item}>Contact</li>
+                      <li className={styles.link__item}>CONTACT</li>
                     </NavLink>
                   </ul>
                 </div>
