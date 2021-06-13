@@ -1,7 +1,8 @@
 @import "../../base.scss";
 
 .projects {
-  //height: 100vh;
+  //height: 90vh;
+
   .sectionHeading {
     text-align: center;
     font-size: 48px;
@@ -17,11 +18,38 @@
     border: none;
   }
 
-  .projectsContainer {
+  .projectWrapper {
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+
+    .projectsContainer {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-laptop) {
+  .projects {
+    .line {
+      width: 25%;
+    }
+
+    .projectWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //flex-direction: column;
+      .projectsContainer {
+        width: 75vw;
+        display: grid;
+        justify-items: center;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+      }
+    }
   }
 }

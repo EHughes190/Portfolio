@@ -11,15 +11,15 @@ const Home = () => {
       <section className={styles.landingPage}>
         <div className={styles.landingPageTitle}>
           <motion.h1
-            animate={{ fontSize: "200%" }}
-            transition={{ duration: 0.5 }}
+            // animate={{ fontSize: "x2" }}
+            // transition={{ duration: 0.5 }}
             className={styles.landingPage__heading}
           >
             ed hughes.
           </motion.h1>
           <motion.h3
-            animate={{ fontSize: "200%" }}
-            transition={{ duration: 0.5 }}
+            // animate={{ fontSize: "x2" }}
+            // transition={{ duration: 0.5 }}
             className={styles.landingPage__subHeading}
           >
             web developer.

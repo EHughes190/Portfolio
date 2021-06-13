@@ -13,11 +13,11 @@
     align-items: center;
 
     .landingPage__heading {
-      font-size: 2.5em;
+      font-size: 3em;
     }
 
     .landingPage__subHeading {
-      font-size: 1.25em;
+      font-size: 2em;
     }
   }
 
@@ -56,12 +56,50 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-laptop) {
-  .landing-page__heading {
-    font-size: 3em;
-  }
+@media screen and (min-width: $breakpoint-tablet) {
+  .landingPage {
+    .landingPageTitle {
+      .landingPage__heading {
+        font-size: 4em;
+      }
 
-  .landing-page__sub-heading {
-    font-size: 2em;
+      .landingPage__subHeading {
+        font-size: 3.5em;
+      }
+    }
+    .landingPageButton {
+      .btnPrimary {
+        width: 30%;
+      }
+    }
+  }
+}
+@media screen and (min-width: $breakpoint-laptop) {
+  .landingPage {
+    .landingPageTitle {
+      .landingPage__heading {
+        font-size: 5em;
+      }
+
+      .landingPage__subHeading {
+        font-size: 3em;
+      }
+    }
+    .landingPageButton {
+      .btnPrimary {
+        width: 25%;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-laptop-lg) {
+  .landingPage {
+    .landingPageButton {
+      .btnPrimary {
+        width: 15%;
+      }
+    }
   }
 }

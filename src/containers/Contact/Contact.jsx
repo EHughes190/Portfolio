@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { motion } from "framer-motion";
-import Envelope from "../../components/Envelope";
 
 const Contact = () => {
   const [isShowingEmail, setisShowingEmail] = useState(false);

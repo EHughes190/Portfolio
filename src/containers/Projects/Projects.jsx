@@ -12,7 +12,9 @@ const Projects = () => {
     <section className={styles.projects}>
       <h3 className={styles.sectionHeading}>projects</h3>
       <hr className={styles.line} />
-      <div className={styles.projectsContainer}>{projects.map(getCard)}</div>
+      <div className={styles.projectWrapper}>
+        <div className={styles.projectsContainer}>{projects.map(getCard)}</div>
+      </div>
     </section>
   );
 };

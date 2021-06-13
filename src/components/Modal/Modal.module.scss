@@ -45,3 +45,16 @@
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-laptop) {
+  .modalBackdrop {
+    .modalContentWrapper {
+      bottom: 0;
+      top: 10vh;
+      left: 75vw;
+
+      width: 25%;
+      height: 90%;
+    }
+  }
+}
