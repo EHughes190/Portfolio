@@ -23,33 +23,49 @@ const ProjectCard = (props) => {
               layoutId="expandable-card-i"
               onClick={() => setOpen(false)}
             />
-            <motion.h2
-              className={styles.titleExpanded}
-              onClick={() => setOpen(false)}
-            >
-              {title}
-            </motion.h2>
-            <motion.div className={styles.btnContainer}>
-              <a href={githubUrl} target="_blank">
-                <motion.button className={styles.btn}>Github</motion.button>
-              </a>
-              <a href={pagesUrl} target="_blank">
-                <motion.button className={styles.btn}>Pages</motion.button>
-              </a>
-            </motion.div>
-            <motion.div
-              className={styles.descContainer}
-              onClick={() => setOpen(false)}
-            >
-              <motion.p className={styles.desc}>{description}</motion.p>
-            </motion.div>
-            <motion.div
-              className={styles.skills}
-              onClick={() => setOpen(false)}
-            >
-              <motion.p>{skills[0]}</motion.p>
-              <motion.p>{skills[1]}</motion.p>
-              <motion.p>{skills[2]}</motion.p>
+            <motion.div className={styles.textContent}>
+              <div className={styles.titleContainer}>
+                <motion.h2
+                  className={styles.titleExpanded}
+                  onClick={() => setOpen(false)}
+                >
+                  {title}
+                </motion.h2>
+                <motion.div className={styles.btnContainer}>
+                  <a href={githubUrl} target="_blank">
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className={styles.btn}
+                    >
+                      Github
+                    </motion.button>
+                  </a>
+                  <a href={pagesUrl} target="_blank">
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className={styles.btn}
+                    >
+                      Pages
+                    </motion.button>
+                  </a>
+                </motion.div>
+              </div>
+              <motion.div
+                className={styles.descContainer}
+                onClick={() => setOpen(false)}
+              >
+                <motion.p className={styles.desc}>{description}</motion.p>
+              </motion.div>
+              <motion.div
+                className={styles.skills}
+                onClick={() => setOpen(false)}
+              >
+                <motion.p>{skills[0]}</motion.p>
+                <motion.p>{skills[1]}</motion.p>
+                <motion.p>{skills[2]}</motion.p>
+              </motion.div>
             </motion.div>
           </motion.article>
         </motion.div>

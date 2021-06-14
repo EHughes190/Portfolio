@@ -46,51 +46,63 @@
     padding: 5px;
   }
 
-  .titleExpanded {
-    height: 10%;
-    padding: 5px;
-  }
+  .textContent {
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    .titleContainer {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .titleExpanded {
+        font-size: 1.6em;
+        //height: 10%;
+        // text-align: center;
+      }
+      .btnContainer {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
-  .btnContainer {
-    height: 10%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 5px;
-    .btn {
-      color: $color-white;
-      background-color: $color-blue;
-      border: 2px solid $color-lightblue;
-      border-radius: 10px;
-      font-size: 20px;
-      padding: 10px;
+        .btn {
+          height: 75%;
+          color: $color-white;
+          background-color: $color-blue;
+          border: 2px solid $color-white;
+          border-radius: 5px;
+          font-size: 1em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          padding: 2.5px;
+        }
+      }
+    }
+
+    .descContainer {
+      height: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
+      .desc {
+        font-size: 1em;
+        padding: 5px;
+        //text-align: center;
+      }
     }
 
-    .btn:active {
-      border: 3px solid $color-lightblue;
-    }
-  }
-
-  .descContainer {
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .desc {
-      font-size: 0.8em;
+    .skills {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 20%;
       padding: 5px;
     }
-  }
-
-  .skills {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 10%;
-    padding: 5px;
   }
 }
 
@@ -101,6 +113,29 @@
 
   .cardExpanded {
     width: 75vw;
+
+    .textContent {
+      .titleContainer {
+        .titleExpanded {
+          font-size: 2em;
+        }
+        .btnContainer {
+          .btn {
+            font-size: 1.3em;
+            padding: 10px;
+          }
+        }
+      }
+
+      .descContainer {
+        .desc {
+          font-size: 1.5em;
+        }
+      }
+
+      .skills {
+      }
+    }
   }
 }
 
@@ -110,6 +145,28 @@
   }
 
   .cardExpanded {
-    width: 40vw;
+    width: 30vw;
+    .textContent {
+      .titleContainer {
+        .titleExpanded {
+          font-size: 1.5em;
+        }
+        .btnContainer {
+          justify-content: space-between;
+          .btn {
+            padding: 4px;
+          }
+        }
+      }
+
+      .descContainer {
+        .desc {
+          font-size: 1em;
+        }
+      }
+
+      .skills {
+      }
+    }
   }
 }

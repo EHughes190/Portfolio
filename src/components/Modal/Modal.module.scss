@@ -24,6 +24,10 @@
     .modalContent {
       color: $primary-color;
 
+      .hamBurgerOpen {
+        color: $primary-color;
+      }
+
       .links {
         position: absolute;
         top: 50%;
@@ -41,6 +45,10 @@
           // border-bottom: 4px solid $primary-color;
           padding: 5px;
         }
+
+        // .link__item:hover {
+        //   color: $color-blue;
+        // }
       }
     }
   }
@@ -52,9 +60,10 @@
       bottom: 0;
       top: 10vh;
       left: 75vw;
-
+      bottom: 10vh;
+      border-radius: 0px;
       width: 25%;
-      height: 90%;
+      height: 80%;
     }
   }
 }

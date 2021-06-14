@@ -39,14 +39,23 @@ const Modal = (props) => {
                 className={styles.modalContent}
               >
                 <div className={styles.menu}>
-                  <ul className={styles.links}>
+                  <motion.ul className={styles.links}>
                     <NavLink
                       exact
                       to="projects"
                       key="nav:projects"
                       onClick={setActive}
                     >
-                      <li className={styles.link__item}>PROJECTS</li>
+                      <motion.li
+                        whileHover={{
+                          scale: 1.1,
+                          transition: { duration: 0.3 },
+                        }}
+                        whileTap={{ scale: 0.9 }}
+                        className={styles.link__item}
+                      >
+                        PROJECTS
+                      </motion.li>
                     </NavLink>
 
                     <NavLink
@@ -55,7 +64,15 @@ const Modal = (props) => {
                       key="nav:about"
                       onClick={setActive}
                     >
-                      <li className={styles.link__item}>ABOUT</li>
+                      <motion.li
+                        whileHover={{
+                          scale: 1.1,
+                          transition: { duration: 0.3 },
+                        }}
+                        className={styles.link__item}
+                      >
+                        ABOUT
+                      </motion.li>
                     </NavLink>
 
                     <NavLink
@@ -64,9 +81,17 @@ const Modal = (props) => {
                       key="nav:contact"
                       onClick={setActive}
                     >
-                      <li className={styles.link__item}>CONTACT</li>
+                      <motion.li
+                        whileHover={{
+                          scale: 1.1,
+                          transition: { duration: 0.3 },
+                        }}
+                        className={styles.link__item}
+                      >
+                        CONTACT
+                      </motion.li>
                     </NavLink>
-                  </ul>
+                  </motion.ul>
                 </div>
               </motion.div>
             </motion.div>
