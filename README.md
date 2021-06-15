@@ -1,3 +1,10 @@
+# Portfolio-React
+
+This is my portfolio, showcasing a selection of my work.
+
+My designs:
+https://www.figma.com/file/etx0LylXqZg5pKOTA7XtcU/Portfolio?node-id=0%3A1
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +75,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Portfolio-React
