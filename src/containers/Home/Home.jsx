@@ -1,36 +1,22 @@
 import React from "react";
 import styles from "./Home.module.scss";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <>
       <section className={styles.landingPage}>
-        <div className={styles.landingPageTitle}>
-          <motion.h1
-            // animate={{ fontSize: "x2" }}
-            // transition={{ duration: 0.5 }}
-            className={styles.landingPage__heading}
-          >
-            ed hughes.
-          </motion.h1>
-          <motion.h3
-            // animate={{ fontSize: "x2" }}
-            // transition={{ duration: 0.5 }}
-            className={styles.landingPage__subHeading}
-          >
+        <div className={styles.title}>
+          <motion.h1 className={styles.title__heading}>ed hughes.</motion.h1>
+          <motion.h3 className={styles.title__subHeading}>
             web developer.
           </motion.h3>
         </div>
-        <div className={styles.landingPageButton}>
-          <Link exact to="projects" className={styles.btnPrimary}>
-            View my work
-            <span className={styles.arrowSpan}>
-              <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-            </span>
+        <div className={styles.landingPage__button}>
+          <Link exact to="projects" className={styles.btn_primary}>
+            View my work <FaArrowRight className={styles.arrowSpan} />
           </Link>
         </div>
       </section>

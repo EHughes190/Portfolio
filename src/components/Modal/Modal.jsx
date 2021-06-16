@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 
 const Modal = (props) => {
   const { isOpen, setActive } = props;
-  //const [open, setOpen] = useState(false);
 
   return (
     <>

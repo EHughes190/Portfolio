@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Contact.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -22,10 +20,7 @@ const Contact = () => {
     </motion.p>
   ) : (
     <motion.div whileHover={{ scale: 1.1 }} onClick={setActiveEmail}>
-      <FontAwesomeIcon
-        icon={faEnvelope}
-        className={styles.contact__icon}
-      ></FontAwesomeIcon>
+      <FaEnvelope className={styles.contact__icon} />
     </motion.div>
   );
 
@@ -43,10 +38,7 @@ const Contact = () => {
               target="_blank"
               href="https://www.linkedin.com/in/ed-hughes-190"
             >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className={styles.contact__icon}
-              ></FontAwesomeIcon>
+              <FaLinkedin className={styles.contact__icon} />
             </motion.a>
             {emailIcon}
             <motion.a
@@ -54,10 +46,7 @@ const Contact = () => {
               target="_blank"
               href="https://github.com/EHughes190"
             >
-              <FontAwesomeIcon
-                icon={faGithub}
-                className={styles.contact__icon}
-              ></FontAwesomeIcon>
+              <FaGithub className={styles.contact__icon} />
             </motion.a>
           </div>
         </div>

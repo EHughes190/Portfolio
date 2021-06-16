@@ -1,55 +1,49 @@
 @import "../../base.scss";
 
-.projects {
-  //height: 90vh;
-
-  .sectionHeading {
+.Projects {
+  &__sectionHeading {
     text-align: center;
     font-size: 48px;
     font-weight: 400;
     padding: 0 0px 10px 0px;
   }
 
-  .line {
+  &__line {
     width: 40%;
     margin: auto;
     height: 5px;
     background-color: $accent-color;
     border: none;
   }
+}
 
-  .projectWrapper {
-    width: 100vw;
-
-    .projectsContainer {
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+.ProjectWrapper {
+  width: 100vw;
+}
+.ProjectContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: $breakpoint-laptop) {
-  .projects {
-    .line {
-      width: 25%;
-    }
+  .Projects__line {
+    width: 25%;
+  }
 
-    .projectWrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      //flex-direction: column;
-      .projectsContainer {
-        width: 75vw;
-        display: grid;
-        justify-items: center;
-        flex-direction: column;
-        grid-template-columns: 1fr 1fr;
-        align-items: flex-start;
-      }
-    }
+  .ProjectWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ProjectContainer {
+    width: 75vw;
+    display: grid;
+    justify-items: center;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
   }
 }

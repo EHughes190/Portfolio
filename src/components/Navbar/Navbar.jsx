@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faIgloo } from "@fortawesome/free-solid-svg-icons";
+import { FaIgloo } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { Twirl as Hamburger } from "hamburger-react";
 import { motion } from "framer-motion";
@@ -23,13 +22,14 @@ const Navbar = () => {
         className={styles.igloo}
       >
         <NavLink exact to="/" key="nav:home">
-          <FontAwesomeIcon icon={faIgloo} size="2x" />
+          <FaIgloo size={"2.2em"} />
         </NavLink>
       </motion.div>
 
       {openNav}
-
-      <Hamburger toggled={isOpen} onToggle={setActive} />
+      <div className={isOpen && styles.open}>
+        <Hamburger toggled={isOpen} onToggle={setActive} />
+      </div>
     </nav>
   );
 };

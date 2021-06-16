@@ -9,11 +9,11 @@ const Projects = () => {
   );
 
   return (
-    <section className={styles.projects}>
-      <h3 className={styles.sectionHeading}>projects</h3>
-      <hr className={styles.line} />
-      <div className={styles.projectWrapper}>
-        <div className={styles.projectsContainer}>{projects.map(getCard)}</div>
+    <section className={styles.Projects}>
+      <h3 className={styles.Projects__sectionHeading}>projects</h3>
+      <hr className={styles.Projects__line} />
+      <div className={styles.ProjectWrapper}>
+        <div className={styles.ProjectContainer}>{projects.map(getCard)}</div>
       </div>
     </section>
   );
