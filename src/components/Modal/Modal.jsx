@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Modal.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { GrClose } from "react-icons/gr";
 
 const Modal = (props) => {
   const { isOpen, setActive } = props;
@@ -37,8 +38,28 @@ const Modal = (props) => {
                 }}
                 className={styles.modalContent}
               >
+                <GrClose
+                  className={styles.closeIcon}
+                  onClick={setActive}
+                ></GrClose>
                 <div className={styles.menu}>
                   <motion.ul className={styles.links}>
+                    <NavLink
+                      exact
+                      to="about"
+                      key="nav:about"
+                      onClick={setActive}
+                    >
+                      <motion.li
+                        whileHover={{
+                          scale: 1.1,
+                          transition: { duration: 0.3 },
+                        }}
+                        className={styles.link__item}
+                      >
+                        ABOUT
+                      </motion.li>
+                    </NavLink>
                     <NavLink
                       exact
                       to="projects"
@@ -54,23 +75,6 @@ const Modal = (props) => {
                         className={styles.link__item}
                       >
                         PROJECTS
-                      </motion.li>
-                    </NavLink>
-
-                    <NavLink
-                      exact
-                      to="about"
-                      key="nav:about"
-                      onClick={setActive}
-                    >
-                      <motion.li
-                        whileHover={{
-                          scale: 1.1,
-                          transition: { duration: 0.3 },
-                        }}
-                        className={styles.link__item}
-                      >
-                        ABOUT
                       </motion.li>
                     </NavLink>
 

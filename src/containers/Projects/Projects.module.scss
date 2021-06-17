@@ -1,10 +1,11 @@
 @import "../../base.scss";
 
 .Projects {
+  margin-top: 10vh;
+  height: calc(100vh - 10vh);
   &__sectionHeading {
     text-align: center;
-    font-size: 48px;
-    font-weight: 400;
+    font-size: 4.8rem;
     padding: 0 0px 10px 0px;
   }
 
@@ -17,11 +18,8 @@
   }
 }
 
-.ProjectWrapper {
-  width: 100vw;
-}
 .ProjectContainer {
-  width: 100vw;
+  //width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -45,5 +43,11 @@
     flex-direction: column;
     grid-template-columns: 1fr 1fr;
     align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: $breakpoint-laptop-lg) {
+  .ProjectContainer {
+    width: 50%;
   }
 }

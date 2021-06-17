@@ -15,15 +15,26 @@ $breakpoint-tablet: 768px;
 $breakpoint-laptop: 1024px;
 $breakpoint-laptop-lg: 1440px;
 
-* {
-  margin: 0;
-  padding: 0;
+html {
+  font: 400 62.5%/1.4 $font-main;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: $font-main;
   color: $color-white;
   font-weight: 400;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+  color: black;
 }

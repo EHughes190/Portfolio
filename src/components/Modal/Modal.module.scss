@@ -7,58 +7,68 @@
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
+}
 
-  .modalContentWrapper {
-    position: fixed;
-    background: $color-white;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    bottom: 0;
-    top: 0;
-    left: 25vw;
-    border-radius: 0px;
-    width: 75%;
-    height: 100%;
+.modalContentWrapper {
+  position: fixed;
+  background: $color-white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  bottom: 0;
+  top: 0;
+  left: 25vw;
+  border-radius: 0px;
+  width: 75%;
+  height: 100%;
+}
+.modalContent {
+  color: $primary-color;
+}
+// .hamBurgerOpen {
+//   color: $primary-color;
+// }
 
-    .modalContent {
-      color: $primary-color;
+.links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.link__item {
+  margin: 20px;
+  color: $primary-color;
+  font-size: 30px;
+  // border-bottom: 4px solid $primary-color;
+  padding: 5px;
+}
 
-      .hamBurgerOpen {
-        color: $primary-color;
-      }
+.closeIcon {
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  font-size: 3rem;
+}
 
-      .links {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-        .link__item {
-          margin: 20px;
-          color: $primary-color;
-          font-size: 30px;
-          // border-bottom: 4px solid $primary-color;
-          padding: 5px;
-        }
-
-        // .link__item:hover {
-        //   color: $color-blue;
-        // }
-      }
-    }
+@media screen and (min-width: $breakpoint-tablet) {
+  .closeIcon {
+    top: 3%;
+    left: 10%;
+    font-size: 4rem;
   }
 }
 
 @media screen and (min-width: $breakpoint-laptop) {
-  .modalBackdrop {
-    .modalContentWrapper {
-      left: 75vw;
-      width: 25%;
-    }
+  .modalContentWrapper {
+    left: 75vw;
+    width: 25%;
+  }
+
+  .closeIcon {
+    left: 10%;
   }
 }

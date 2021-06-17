@@ -2,16 +2,23 @@
 
 .nav {
   height: 10vh;
-  width: 100%;
-  // background: blue;
+  //width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $primary-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
+  position: fixed;
+  z-index: 2;
 }
 
 .igloo {
   padding-left: 5px;
+  font-size: 5rem;
 }
 
 .igloo:hover {
@@ -27,7 +34,25 @@
 //   opacity: 0;
 // }
 
-.open div {
-  //background-color: $primary-color;
-  color: $primary-color;
+// .open div {
+//   //background-color: $primary-color;
+//   color: $primary-color;
+// }
+
+.hamburger {
+  font-size: 4rem;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .igloo {
+    font-size: 6rem;
+  }
+
+  .hamburger {
+    font-size: 6rem;
+  }
 }
