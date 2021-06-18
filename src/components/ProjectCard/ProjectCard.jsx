@@ -9,6 +9,10 @@ const ProjectCard = (props) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const skillText = skills.map((skill) => {
+    return <p className={styles.skill}>{skill}</p>;
+  });
+
   return (
     <AnimateSharedLayout>
       {isOpen ? (
@@ -67,9 +71,11 @@ const ProjectCard = (props) => {
                 className={styles.skills}
                 onClick={() => setIsOpen(false)}
               >
-                <motion.p>{skills[0]}</motion.p>
+                {skillText}
+
+                {/* <motion.p>{skills[0]}</motion.p>
                 <motion.p>{skills[1]}</motion.p>
-                <motion.p>{skills[2]}</motion.p>
+                <motion.p>{skills[2]}</motion.p> */}
               </motion.div>
             </motion.div>
           </motion.article>

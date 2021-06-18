@@ -1,10 +1,47 @@
 @import "../../base.scss";
 
+.about {
+  margin-top: 10vh;
+  // height: calc(100vh - 10vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    //height: 70vh;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 15px;
+  }
+
+  &__image {
+    max-height: 90%; //at tablet breakpoint reduce size to 50%
+    max-width: 90%; //at tablet breakpoint reduce size to 50%
+    background-color: #bbb;
+    border-radius: 50%;
+    border: 2px solid $accent-color;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin: 10px;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+  }
+}
 .sectionHeading {
   text-align: center;
   font-size: 48px;
   font-weight: 400;
-  padding: 0 0px 30px 0px;
+  padding: 0 0px 10px 0px;
 }
 
 .line {
@@ -13,4 +50,142 @@
   height: 5px;
   background-color: $accent-color;
   border: none;
+}
+
+.grid__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px 30px;
+  height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-size: 2.5rem;
+    margin: 10px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+.skill {
+  padding: 5px;
+  font-size: 1.4rem;
+  // border: 2px solid $accent-color;
+}
+
+.skill:hover {
+  color: $accent-color;
+}
+
+@media screen and (min-width: $breakpoint-lg-phone) {
+  .about__title {
+    font-size: 2.7rem;
+    max-width: 80%;
+    margin: 10px;
+  }
+
+  .about__text {
+    font-size: 1.7rem;
+    max-width: 70%;
+  }
+
+  .skills {
+    &__title {
+      font-size: 2.7rem;
+    }
+
+    .skill {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .about__grid {
+    //height: 70vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .grid__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding-left: 30px;
+  }
+
+  .about__image {
+    max-height: 90%;
+    max-width: 90%;
+  }
+
+  .about__title {
+    font-size: 2.5rem;
+    margin: 10px;
+  }
+
+  .about__text {
+    font-size: 1.5rem;
+  }
+
+  .skills {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    .skill {
+      font-size: 1.8rem;
+    }
+
+    .skill {
+      padding: 5px;
+      font-size: 2rem;
+      // border: 2px solid $accent-color;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-laptop) {
+  .line {
+    width: 25%;
+  }
+  .about__grid {
+    width: 75%;
+    margin: 0;
+    margin-top: 15px;
+  }
+  .about__title {
+    font-size: 2.5rem;
+    margin: 10px;
+    max-width: 70%;
+  }
+
+  .about__text {
+    font-size: 1.8rem;
+    max-width: 70%;
+  }
 }

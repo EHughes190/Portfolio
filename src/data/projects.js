@@ -1,7 +1,12 @@
+import FB from "../assets/images/Flappy-Clone.png";
+import JSC from "../assets/images/JS-Calculator.png";
+import MT from "../assets/images/Morse-Translator.png";
+
 const projects = [
   {
     title: "Flappy Clone",
-    img: "https://drive.google.com/uc?export=view&id=1xnpzcP5YMyvb4fCykaiBd5utHdDzpa-V",
+    img: FB,
+    // img: "https://drive.google.com/uc?export=view&id=1xnpzcP5YMyvb4fCykaiBd5utHdDzpa-V",
     githubUrl: "https://github.com/EHughes190/Flappy-Clone",
     pagesUrl: "https://ehughes190.github.io/Flappy-Clone/",
     skills: ["HTML", "SCSS", "JavaScript"],
@@ -12,7 +17,8 @@ const projects = [
 
   {
     title: "JS Calculator",
-    img: "https://drive.google.com/uc?export=view&id=1xCP9a7DZpzC4TACMZSP8hW3KfUunSeRO",
+    img: JSC,
+    //img: "https://drive.google.com/uc?export=view&id=1xCP9a7DZpzC4TACMZSP8hW3KfUunSeRO",
     githubUrl: "https://github.com/EHughes190/JS-Calculator",
     pagesUrl: "https://ehughes190.github.io/JS-Calculator/",
     skills: ["HTML", "SCSS", "JavaScript", "Cypress"],
@@ -23,7 +29,8 @@ const projects = [
 
   {
     title: "Morse Translator",
-    img: "https://drive.google.com/uc?export=view&id=1jEgn1EvGIAR1zUiv63BIs0k_E4RxJSA2",
+    img: MT,
+    // img: "https://drive.google.com/uc?export=view&id=1jEgn1EvGIAR1zUiv63BIs0k_E4RxJSA2",
     githubUrl: "https://github.com/EHughes190/morse-translator",
     pagesUrl: "https://ehughes190.github.io/morse-translator/",
     skills: ["HTML", "SCSS", "JavaScript", "Jest"],

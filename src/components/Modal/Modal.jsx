@@ -16,7 +16,6 @@ const Modal = (props) => {
             animate={{ opacity: 1, transiton: 0.2 }}
             exit={{ opacity: 0, transiton: { delay: 0.3 } }}
             className={styles.modalBackdrop}
-            onClick={setActive}
           >
             <motion.div
               initial={{ scale: 0 }}
