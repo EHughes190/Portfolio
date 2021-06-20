@@ -24,9 +24,7 @@ const Navbar = () => {
       </motion.div>
 
       {openNav}
-      {/* <div className={isOpen && styles.open}>
-        <Hamburger toggled={isOpen} onToggle={setActive} />
-      </div> */}
+
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <GiHamburgerMenu
           className={styles.hamburger}
