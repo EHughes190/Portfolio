@@ -13,7 +13,7 @@ import Projects from "../Projects";
 const Routes = () => {
   return (
     <Switch>
-      <Route exact path="/">
+      <Route exact path="Portfolio-React/">
         <Home />
       </Route>
       <Route path="/about">
