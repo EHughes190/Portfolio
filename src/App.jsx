@@ -1,6 +1,6 @@
 import "./App.module.scss";
 // import { BrowserRouter as Router } from "react-router-dom";
-
+import { HashRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Routes from "./containers/Routes";
 import AOS from "aos";
