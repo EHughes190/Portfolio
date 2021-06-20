@@ -4,15 +4,13 @@ import Navbar from "./components/Navbar";
 import Routes from "./containers/Routes";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useLayoutEffect } from "react";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  });
   AOS.init();
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes />
     </Router>
