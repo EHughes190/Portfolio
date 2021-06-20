@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import { FaIgloo } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import { Twirl as Hamburger } from "hamburger-react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { motion } from "framer-motion";

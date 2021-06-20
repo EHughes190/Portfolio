@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className={styles.contact}>
+      <section className={styles.contact} data-aos={"fade-up"}>
         <h3 className={styles.contact__heading}>Interested?</h3>
         <h4 className={styles.contact__subHeading}>
           Lets get this party started

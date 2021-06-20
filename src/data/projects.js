@@ -13,7 +13,7 @@ const projects = [
     skills: ["HTML", "SCSS", "JavaScript"],
     description:
       "A browser based, infinite runner game, built using HTML, SCSS and JavaScript. The core functionality of the game is created using JavaScript.  Although the game is best enjoyed on a mobile/ portrait device, it is scalable to any device width.",
-    id: "a",
+    id: "1",
   },
 
   {
@@ -25,7 +25,7 @@ const projects = [
     skills: ["HTML", "SCSS", "JavaScript", "Cypress"],
     description:
       "A calculator built with JavaScript, HTML and SCSS. This project allowed me to practise my JS skills and fundamentals, as well as implement e2e testing using cypress.",
-    id: "b",
+    id: "2",
   },
 
   {
@@ -37,7 +37,7 @@ const projects = [
     skills: ["HTML", "SCSS", "JavaScript", "Jest"],
     description:
       "A transaltor app built using HTML, SCSS AND JavaScript. This project allows an input to be translated from English to Morse, and vice versa. I was able to implement Unit testing using Jest in this project.",
-    id: "c",
+    id: "3",
   },
   {
     title: "Team Ticket Tracker",
@@ -47,7 +47,7 @@ const projects = [
     skills: ["React", "Sass"],
     description:
       "An app to track individual employee's ticket count. Built in 3 hours to practice pair programming.",
-    id: "d",
+    id: "4",
   },
 ];
 

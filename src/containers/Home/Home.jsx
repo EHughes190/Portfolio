@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Home = () => {
   return (
     <>
-      <section className={styles.landingPage}>
+      <section className={styles.landingPage} data-aos={"fade-up"}>
         <div className={styles.title}>
           <h1 className={styles.title__heading}>ed hughes.</h1>
           <h3 className={styles.title__subHeading}>web developer.</h3>

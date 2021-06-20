@@ -5,11 +5,11 @@ import projects from "../../data/projects";
 
 const Projects = () => {
   const getCard = (projectsObj) => (
-    <ProjectCard projects={projectsObj} key={projectsObj.id} />
+    <ProjectCard projects={projectsObj} key={`project:${projectsObj.id}`} />
   );
 
   return (
-    <section className={styles.Projects}>
+    <section className={styles.Projects} data-aos={"fade-up"}>
       <h3 className={styles.Projects__sectionHeading}>projects</h3>
       <hr className={styles.Projects__line} />
       <div className={styles.ProjectWrapper}>

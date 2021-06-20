@@ -6,7 +6,7 @@ import { FiExternalLink } from "react-icons/fi";
 //import ProjectCardExpanded from "../ProjectCardExpanded/ProjectCardExpanded";
 
 const ProjectCard = (props) => {
-  const { title, img, description, skills, githubUrl, pagesUrl } =
+  const { title, img, description, skills, githubUrl, pagesUrl, id } =
     props.projects;
 
   const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +83,11 @@ const ProjectCard = (props) => {
           </motion.article>
         </motion.div>
       ) : (
-        <motion.div onClick={() => setIsOpen(true)} layoutId="expandable-card">
+        <div
+          onClick={() => setIsOpen(true)}
+          layoutId="expandable-card"
+          data-aos={"fade-up"}
+        >
           <motion.article className={styles.card} layoutId="expandable-card-a">
             <motion.img
               className={styles.card__image}
@@ -95,7 +99,7 @@ const ProjectCard = (props) => {
               <motion.h2 className={styles.title__heading}>{title}</motion.h2>
             </div>
           </motion.article>
-        </motion.div>
+        </div>
       )}
     </AnimateSharedLayout>
   );

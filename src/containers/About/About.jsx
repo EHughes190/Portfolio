@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const About = (props) => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} data-aos={"fade-up"}>
       <h3 className={styles.sectionHeading}>about</h3>
       <hr className={styles.line} />
       <div className={styles.about__grid}>
