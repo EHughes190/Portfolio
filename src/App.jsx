@@ -1,5 +1,6 @@
 import "./App.module.scss";
-import { BrowserRouter as Router } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Routes from "./containers/Routes";
 import AOS from "aos";
@@ -9,7 +10,7 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 function App() {
   AOS.init();
   return (
-    <Router>
+    <Router basename="/">
       <ScrollToTop />
       <Navbar />
       <Routes />
