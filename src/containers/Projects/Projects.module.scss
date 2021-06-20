@@ -41,8 +41,9 @@
     display: grid;
     justify-items: center;
     flex-direction: column;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: flex-start;
+    margin-top: 20px;
   }
 }
 

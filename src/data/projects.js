@@ -1,6 +1,7 @@
 import FB from "../assets/images/Flappy-Clone.png";
 import JSC from "../assets/images/JS-Calculator.png";
 import MT from "../assets/images/Morse-Translator.png";
+import TT from "../assets/images/Ticket-Tracker.png";
 
 const projects = [
   {
@@ -11,7 +12,7 @@ const projects = [
     pagesUrl: "https://ehughes190.github.io/Flappy-Clone/",
     skills: ["HTML", "SCSS", "JavaScript"],
     description:
-      "A browser based, infinite runner game, built using HTML, SCSS and JavaScript. The core functionality of the game is created using JavaScript. The game features a session based highscore system, and crisp collision detection. Although the game is best enjoyed on a mobile/ portrait device, it is scalable to any device width.",
+      "A browser based, infinite runner game, built using HTML, SCSS and JavaScript. The core functionality of the game is created using JavaScript.  Although the game is best enjoyed on a mobile/ portrait device, it is scalable to any device width.",
     id: "a",
   },
 
@@ -35,8 +36,18 @@ const projects = [
     pagesUrl: "https://ehughes190.github.io/morse-translator/",
     skills: ["HTML", "SCSS", "JavaScript", "Jest"],
     description:
-      "A transaltor app built using HTML, SCSS AND JavaScript. This project allows an input to be translated from English to Morse, and vice versa. I was able to implement Unit testing using Jest in this project. The main functionality of the translation is based around two functions, which contain an object of alpha/numeric key: value pairs.",
+      "A transaltor app built using HTML, SCSS AND JavaScript. This project allows an input to be translated from English to Morse, and vice versa. I was able to implement Unit testing using Jest in this project.",
     id: "c",
+  },
+  {
+    title: "Team Ticket Tracker",
+    img: TT,
+    githubUrl: "https://github.com/EHughes190/ticket-tracker",
+    pagesUrl: "https://ehughes190.github.io/ticket-tracker/",
+    skills: ["React", "Sass"],
+    description:
+      "An app to track individual employee's ticket count. Built in 3 hours to practice pair programming.",
+    id: "d",
   },
 ];
 

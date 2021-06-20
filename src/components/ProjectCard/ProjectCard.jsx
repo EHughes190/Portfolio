@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from "./ProjectCard.module.scss";
 import { AnimateSharedLayout, motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 //import ProjectCardExpanded from "../ProjectCardExpanded/ProjectCardExpanded";
 
 const ProjectCard = (props) => {
@@ -47,7 +49,7 @@ const ProjectCard = (props) => {
                       whileTap={{ scale: 0.9 }}
                       className={styles.btn}
                     >
-                      Github
+                      <FaGithub />
                     </motion.button>
                   </a>
                   <a href={pagesUrl} target="_blank">
@@ -56,7 +58,7 @@ const ProjectCard = (props) => {
                       whileTap={{ scale: 0.9 }}
                       className={styles.btn}
                     >
-                      Pages
+                      <FiExternalLink />
                     </motion.button>
                   </a>
                 </motion.div>
