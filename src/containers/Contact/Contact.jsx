@@ -36,6 +36,7 @@ const Contact = () => {
             <motion.a
               whileHover={{ scale: 1.1 }}
               target="_blank"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/ed-hughes-190"
             >
               <FaLinkedin className={styles.contact__icon} />
@@ -44,6 +45,7 @@ const Contact = () => {
             <motion.a
               whileHover={{ scale: 1.1 }}
               target="_blank"
+              rel="noreferrer"
               href="https://github.com/EHughes190"
             >
               <FaGithub className={styles.contact__icon} />

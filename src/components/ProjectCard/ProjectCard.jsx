@@ -43,7 +43,7 @@ const ProjectCard = (props) => {
                   {title}
                 </motion.h2>
                 <motion.div className={styles.btnContainer}>
-                  <a href={githubUrl} target="_blank">
+                  <a href={githubUrl} target="_blank" rel="noreferrer">
                     <motion.button
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
@@ -52,7 +52,7 @@ const ProjectCard = (props) => {
                       <FaGithub />
                     </motion.button>
                   </a>
-                  <a href={pagesUrl} target="_blank">
+                  <a href={pagesUrl} target="_blank" rel="noreferrer">
                     <motion.button
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
