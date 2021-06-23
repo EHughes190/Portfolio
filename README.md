@@ -1,4 +1,4 @@
-# Portfolio-React
+# Portfolio
 
 This is my portfolio, showcasing a selection of my work.
 
