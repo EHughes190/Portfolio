@@ -36,7 +36,7 @@ const projects = [
     pagesUrl: "https://ehughes190.github.io/morse-translator/",
     skills: ["HTML", "SCSS", "JavaScript", "Jest"],
     description:
-      "A transaltor app built using HTML, SCSS AND JavaScript. This project allows an input to be translated from English to Morse, and vice versa. I was able to implement Unit testing using Jest in this project.",
+      "A translator app built using HTML, SCSS AND JavaScript. This project allows an input to be translated from English to Morse, and vice versa. I was able to implement Unit testing using Jest in this project.",
     id: "3",
   },
   {
