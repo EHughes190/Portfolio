@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./ProjectCard.module.scss";
 import { AnimateSharedLayout, motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaPlay } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 //import ProjectCardExpanded from "../ProjectCardExpanded/ProjectCardExpanded";
 
@@ -58,7 +58,7 @@ const ProjectCard = (props) => {
                       whileTap={{ scale: 0.9 }}
                       className={styles.btn}
                     >
-                      <FiExternalLink />
+                      <FaPlay />
                     </motion.button>
                   </a>
                 </motion.div>
