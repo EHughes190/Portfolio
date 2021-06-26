@@ -6,7 +6,7 @@ import { FiExternalLink } from "react-icons/fi";
 //import ProjectCardExpanded from "../ProjectCardExpanded/ProjectCardExpanded";
 
 const ProjectCard = (props) => {
-  const { title, img, description, skills, githubUrl, pagesUrl, id } =
+  const { title, img, description, skills, githubUrl, hostedUrl, id } =
     props.projects;
 
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +52,7 @@ const ProjectCard = (props) => {
                       <FaGithub />
                     </motion.button>
                   </a>
-                  <a href={pagesUrl} target="_blank" rel="noreferrer">
+                  <a href={hostedUrl} target="_blank" rel="noreferrer">
                     <motion.button
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
