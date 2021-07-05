@@ -1,4 +1,4 @@
-@import "../../base.scss";
+@use "../../base.scss" as *;
 
 .modalBackdrop {
   position: fixed;
@@ -25,9 +25,6 @@
 .modalContent {
   color: $primary-color;
 }
-// .hamBurgerOpen {
-//   color: $primary-color;
-// }
 
 .links {
   position: absolute;
@@ -43,7 +40,6 @@
   margin: 20px;
   color: $primary-color;
   font-size: 30px;
-  // border-bottom: 4px solid $primary-color;
   padding: 5px;
 }
 

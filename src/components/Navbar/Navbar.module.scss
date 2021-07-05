@@ -1,8 +1,7 @@
-@import "../../base.scss";
+@use "../../base.scss" as *;
 
 .nav {
   height: 10vh;
-  //width: 100%;
   top: 0;
   right: 0;
   bottom: 0;

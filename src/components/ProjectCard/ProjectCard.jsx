@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import styles from "./ProjectCard.module.scss";
 import { AnimateSharedLayout, motion } from "framer-motion";
 import { FaGithub, FaPlay } from "react-icons/fa";
-import { FiExternalLink } from "react-icons/fi";
 //import ProjectCardExpanded from "../ProjectCardExpanded/ProjectCardExpanded";
 
 const ProjectCard = (props) => {
-  const { title, img, description, skills, githubUrl, hostedUrl, id } =
+  const { title, img, description, skills, githubUrl, hostedUrl } =
     props.projects;
 
   const [isOpen, setIsOpen] = useState(false);
@@ -32,13 +31,13 @@ const ProjectCard = (props) => {
               src={img}
               alt="cat"
               layoutId="expandable-card-i"
-              onClick={() => setIsOpen(false)}
+              onClick={() => setIsOpen(!isOpen)}
             />
             <motion.div className={styles.textContent}>
               <motion.div className={styles.titleContainer}>
                 <motion.h2
                   className={styles.titleContainer__heading}
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   {title}
                 </motion.h2>
@@ -65,26 +64,22 @@ const ProjectCard = (props) => {
               </motion.div>
               <motion.div
                 className={styles.desc}
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsOpen(!isOpen)}
               >
                 <motion.p className={styles.desc__text}>{description}</motion.p>
               </motion.div>
               <motion.div
                 className={styles.skills}
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsOpen(!isOpen)}
               >
                 {skillText}
-
-                {/* <motion.p>{skills[0]}</motion.p>
-                <motion.p>{skills[1]}</motion.p>
-                <motion.p>{skills[2]}</motion.p> */}
               </motion.div>
             </motion.div>
           </motion.article>
         </motion.div>
       ) : (
         <div
-          onClick={() => setIsOpen(true)}
+          onClick={() => setIsOpen(!isOpen)}
           layoutId="expandable-card"
           data-aos={"fade-up"}
         >

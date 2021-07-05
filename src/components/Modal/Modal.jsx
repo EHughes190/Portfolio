@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Modal.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import { NavLink } from "react-router-dom";

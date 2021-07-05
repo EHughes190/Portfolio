@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./About.module.scss";
-import SectionHeading from "../../components/SectionHeading";
-import { motion } from "framer-motion";
 
 const About = (props) => {
   return (
@@ -26,10 +24,9 @@ const About = (props) => {
           <img
             className={styles.about__image}
             src="https://avatars.githubusercontent.com/u/77494320?v=4"
-            alt="picture of Ed"
+            alt="Ed"
           />
         </div>
-        {/* <div className={styles.grid__item}> */}
         <div className={styles.skills}>
           <h3 className={styles.skills__title}>Skills</h3>
           <div className={styles.skills__text}>
@@ -52,7 +49,6 @@ const About = (props) => {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </section>
   );
 };

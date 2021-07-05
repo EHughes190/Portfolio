@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Routes.module.scss";
+//import styles from "./Routes.module.scss";
 
-import { Switch, Route, HashRouter } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 //Switch is going to render the route that matches the URL
 //https://reactrouter.com/web/guides/quick-start
 import Home from "../Home";
