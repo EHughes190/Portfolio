@@ -29,7 +29,7 @@ const Contact = () => {
       <section className={styles.contact} data-aos={"fade-up"}>
         <h3 className={styles.contact__heading}>Interested?</h3>
         <h4 className={styles.contact__subHeading}>
-          Lets get this party started
+          Let's get this party started
         </h4>
         <div className={styles.contact__container}>
           <div className={styles.contact__flex}>
