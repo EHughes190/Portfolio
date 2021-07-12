@@ -43,9 +43,9 @@ const About = (props) => {
             {/* <p>GCP</p> */}
             {/* <p>CI/CD</p> */}
             <p className={styles.skill}>OOP</p>
-            {/* <p>Java</p>
-          <p>Spring</p>
-          <p>SQL</p> */}
+            <p className={styles.skill}>Java</p>
+            <p className={styles.skill}>Spring</p>
+            <p className={styles.skill}>SQL</p>
           </div>
         </div>
       </div>
