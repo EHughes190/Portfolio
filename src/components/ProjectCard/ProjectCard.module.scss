@@ -118,8 +118,9 @@
 }
 
 .skill {
-  border: 2px solid $color-white;
+  //border: 2px solid $color-white;
   padding: 5px;
+  font-size: 2.5rem;
   color: $color-white;
 }
 @media screen and (min-width: $breakpoint-lg-phone) {
@@ -131,6 +132,10 @@
   .cardExpanded {
     width: 60vw;
     height: 75vh;
+  }
+
+  .skill {
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: $breakpoint-tablet) {
@@ -225,6 +230,6 @@
   }
 
   .skill {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
