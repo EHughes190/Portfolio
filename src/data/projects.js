@@ -4,6 +4,7 @@ import MT from "../assets/images/Morse-Translator.png";
 import TT from "../assets/images/Ticket-Tracker.png";
 import PA from "../assets/images/Punk-API.png";
 import SM from "../assets/images/SCI-MX.png";
+import TST from "../assets/images/tennis-ball.png";
 
 const projects = [
   {
@@ -68,6 +69,17 @@ const projects = [
     description:
       "This React and Firebase project was created in collaboration with Ross Richardson and Gemma Peakman from SCIMX and the Fiji intake from the _nology software development course.",
     id: "6",
+  },
+  {
+    title: "Tennis Score Tracker",
+    img: TST,
+    // img: "https://drive.google.com/uc?export=view&id=1xnpzcP5YMyvb4fCykaiBd5utHdDzpa-V",
+    githubUrl: "https://github.com/EHughes190/Tennis-Score-Tracker",
+    hostedUrl: "https://github.com/EHughes190/Tennis-Score-Tracker",
+    skills: ["React", "SCSS", "Java", "Figma", "SQL"],
+    description:
+      "UNDER CONSTRUCTION. A full stack web app to track the scores of your tennis matches with friends.",
+    id: "7",
   },
 ];
 
