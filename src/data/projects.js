@@ -3,6 +3,7 @@ import JSC from "../assets/images/JS-Calculator.png";
 import MT from "../assets/images/Morse-Translator.png";
 import TT from "../assets/images/Ticket-Tracker.png";
 import PA from "../assets/images/Punk-API.png";
+import SM from "../assets/images/SCI-MX.png";
 
 const projects = [
   {
@@ -57,6 +58,16 @@ const projects = [
     description:
       "A calculator built with JavaScript, HTML and SCSS. This project allowed me to practise my JS skills and fundamentals, as well as implement e2e testing using cypress.",
     id: "5",
+  },
+  {
+    title: "SCI-MX Fitness Tracker",
+    img: SM,
+    githubUrl: "https://github.com/nology-tech/sci-mx",
+    hostedUrl: "https://client-project-f60f4.firebaseapp.com/",
+    skills: ["SCSS", "React", "Firebase", "Figma"],
+    description:
+      "This React and Firebase project was created in collaboration with Ross Richardson and Gemma Peakman from SCIMX and the Fiji intake from the _nology software development course.",
+    id: "6",
   },
 ];
 

@@ -5,13 +5,17 @@ import { FaGithub, FaPlay } from "react-icons/fa";
 //import ProjectCardExpanded from "../ProjectCardExpanded/ProjectCardExpanded";
 
 const ProjectCard = (props) => {
-  const { title, img, description, skills, githubUrl, hostedUrl } =
+  const { title, img, description, skills, githubUrl, hostedUrl, id } =
     props.projects;
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const skillText = skills.map((skill) => {
-    return <p className={styles.skill}>{skill}</p>;
+  const skillText = skills.map((skill, index) => {
+    return (
+      <p className={styles.skill} key={id + skill + index}>
+        {skill}
+      </p>
+    );
   });
 
   return (

@@ -2,11 +2,11 @@
 
 This is my portfolio, showcasing a selection of my work.
 
-My designs:
-https://www.figma.com/file/etx0LylXqZg5pKOTA7XtcU/Portfolio?node-id=0%3A1
+### Project Links
 
-Potfolio site:
-https://ehughes190.github.io/Portfolio/
+- [Live site](https://ehughes190.github.io/Portfolio/)
+
+- [High fidelity Wire frames](https://www.figma.com/file/etx0LylXqZg5pKOTA7XtcU/Portfolio?node-id=0%3A1)
 
 In this project, one of the packages I have used is FramerMotion. I enjoyed exploring the documentation for Framer and applying the motion features to style my projects cards.
 
