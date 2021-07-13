@@ -12,7 +12,7 @@ const Home = () => {
           <h3 className={styles.title__subHeading}>web developer.</h3>
         </div>
         <div className={styles.landingPage__btn}>
-          <Link exact to="projects" className={styles.btn_primary}>
+          <Link to="projects" className={styles.btn_primary}>
             View my work <FaArrowRight className={styles.arrowSpan} />
           </Link>
         </div>
