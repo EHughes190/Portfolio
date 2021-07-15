@@ -40,8 +40,8 @@ const About = (props) => {
             <p className={styles.skill}>Enzyme</p>
             <p className={styles.skill}>Github Actions</p>
             <p className={styles.skill}>TTD</p>
-            {/* <p>GCP</p> */}
-            {/* <p>CI/CD</p> */}
+            <p className={styles.skill}>GCP</p>
+            <p className={styles.skill}>CI/CD</p>
             <p className={styles.skill}>OOP</p>
             <p className={styles.skill}>Java</p>
             <p className={styles.skill}>Spring</p>
