@@ -4,8 +4,8 @@ import ProjectCard from "../../components/ProjectCard";
 import projects from "../../data/projects";
 
 const Projects = () => {
-  const projectsJSX = projects.map((projectsObj) => (
-    <ProjectCard projects={projectsObj} key={`project:${projectsObj.id}`} />
+  const projectsJSX = projects.map((projectObj) => (
+    <ProjectCard project={projectObj} key={`project:${projectObj.id}`} />
   ));
 
   return (
