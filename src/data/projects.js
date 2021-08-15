@@ -6,6 +6,7 @@ import PA from "../assets/images/Punk-API.png";
 import SM from "../assets/images/SCI-MX.png";
 import TST from "../assets/images/tennis-ball.png";
 import FS from "../assets/images/Food-And-Stuff.png";
+import NN from "../assets/images/Next-News.png";
 
 import { FaReact } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
@@ -14,10 +15,20 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { IoLogoFirebase } from "react-icons/io5";
-import { SiJest, SiMaterialUi } from "react-icons/si";
+import { SiJest, SiMaterialUi, SiNextDotJs } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
 const projects = [
+  {
+    title: "Next News",
+    img: NN,
+    githubUrl: "https://github.com/EHughes190/Next-News",
+    hostedUrl: "https://next-news-chi.vercel.app/",
+    skills: [<SiNextDotJs />, <FaReact />, <FaSass />, <FiFigma />],
+    description:
+      "A news app that displays current news stories from across several categories. Built using next.js, the pages are rendered on build, fetching from the newsapi.org. Figma, Framer motion and SCSS are used for the styling.",
+    id: "9",
+  },
   {
     title: "Food and Stuff",
     img: FS,
@@ -29,6 +40,16 @@ const projects = [
     id: "1",
   },
   {
+    title: "Punk API",
+    img: PA,
+    githubUrl: "https://github.com/EHughes190/Punk-API",
+    hostedUrl: "https://punk-api-c310d.web.app/",
+    skills: [<FaReact />, <FaSass />, <IoLogoFirebase />, <FiFigma />],
+    description:
+      "An app which fetches information from the Punk API, and displays this information as cards. The results can be filtered by ABV %, and by 'Classics', or by searching directly. Hosted with Firebase.",
+    id: "3",
+  },
+  {
     title: "Flappy Clone",
     img: FB,
     // img: "https://drive.google.com/uc?export=view&id=1xnpzcP5YMyvb4fCykaiBd5utHdDzpa-V",
@@ -38,16 +59,6 @@ const projects = [
     description:
       "A browser based, infinite runner game, built using HTML, SCSS and JavaScript. The core functionality of the game is created using JavaScript.  Although the game is best enjoyed on a mobile/ portrait device, it is scalable to any device width.",
     id: "2",
-  },
-  {
-    title: "Punk API",
-    img: PA,
-    githubUrl: "https://github.com/EHughes190/Punk-API",
-    hostedUrl: "https://punk-api-c310d.web.app/",
-    skills: [<FaReact />, <FaSass />, <IoLogoFirebase />, <FiFigma />],
-    description:
-      "An app which fetches information from the Punk API, and displays this information as cards. The results can be filtered by ABV %, and by 'Classics', or by searching directly. Hosted with Firebase.",
-    id: "3",
   },
   {
     title: "Morse Translator",
