@@ -1,59 +1,284 @@
 @use "../../base.scss" as *;
 
 .card {
-  margin: 20px;
-  width: 80vw;
-  height: 40vh;
+  margin: 20px 0;
+  width: 280px;
+  height: 300px;
   border: 2px solid $accent-color;
-  background-color: $primary-color;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: transform 250ms;
+  background-size: cover;
+  overflow: hidden;
+  transition: transform 500ms ease;
 
   &:hover {
-    transform: translateY(-10px);
     cursor: pointer;
   }
 
-  &__image {
-    width: 100%;
-    height: 80%;
-    border-top-left-radius: 2.5px;
-    border-top-right-radius: 2.5px;
+  &:hover .card__title::after,
+  &:focus-within .card__title::after {
+    transform: scaleX(1);
+    transition-delay: 750ms;
+  }
+
+  &__content {
+    position: relative;
+    padding: 40% 1.5rem 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3) 20%,
+      rgba(0, 0, 0, 1)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 1.5rem;
+  }
+
+  &__title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(1.5rem * -1);
+    bottom: 0;
+    width: calc(100% + 1.5rem);
+    background: $accent-color;
+    transform-origin: left;
+    transition: transform 500ms ease;
+  }
+
+  &__buttons {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__btn {
+    background: transparent;
+    color: $accent-color;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    //padding: 0 2.5px 0 30px;
+  }
+
+  &__body {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+  }
+
+  &__skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20%;
+    padding: 10px;
+  }
+
+  &__skill {
+    padding: 5px;
+    font-size: 2rem;
+    color: $color-white;
   }
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20%;
-  width: 100%;
+@media (hover) {
+  .card {
+    &__content {
+      transform: translateY(65%);
+      transition: transform 300ms ease;
+    }
 
-  background: $accent-color;
-  &__heading {
-    text-align: center;
-    color: $primary-color;
-    font-weight: 600;
+    &:hover .card__content,
+    &:focus-within .card__content {
+      transform: translateY(0);
+      transition-delay: 500ms;
+    }
+
+    &:focus-within .card__content {
+      transition-duration: 0ms;
+    }
+
+    &__content > *:not(.card__heading) {
+      opacity: 0;
+      transition: opacity 500ms linear;
+    }
+
+    &:hover .card__content > *:not(.card__heading),
+    &:focus-within .card__content > *:not(.card__heading) {
+      opacity: 1;
+      transition-delay: 750ms;
+    }
+
+    &__title::after {
+      transform: scaleX(0);
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md-phone) {
+  .card {
+    &__content {
+      padding: 40% 1.5rem 0;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg-phone) {
+  .card {
+    width: 400px;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    &__content {
+      padding: 30% 1.5rem 0;
+    }
+
+    &__body {
+      font-size: 1.2rem;
+    }
   }
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
   .card {
-    width: 60vw;
-    height: 40vh;
-  }
-
-  .title__heading {
-    font-size: 3rem;
+    width: 300px;
+    height: 300px;
+    &__content {
+      padding: 35% 1.5rem 0;
+    }
   }
 }
 
 @media screen and (min-width: $breakpoint-laptop) {
   .card {
-    width: 25vw;
+    width: 400px;
+    &__content {
+      padding: 30% 1.5rem 0;
+    }
+
+    &__body {
+      font-size: 1.4rem;
+    }
+
+    &__skill {
+      font-size: 3rem;
+    }
   }
 }
+
+@media screen and (min-width: $breakpoint-laptop-lg) {
+  .card {
+    width: 500px;
+    &__content {
+      padding: 25% 1.5rem 0;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-laptop-xl) {
+  .card {
+    width: 550px;
+    height: 350px;
+    &__content {
+      padding: 30% 1.5rem 0;
+    }
+
+    &__body {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}
+
+// @use "../../base.scss" as *;
+
+// .card {
+//   margin: 20px;
+//   width: 80vw;
+//   height: 40vh;
+//   border: 2px solid $accent-color;
+//   //background-color: $primary-color;
+//   border-radius: 5px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   transition: transform 250ms;
+
+//   &:hover {
+//     cursor: pointer;
+//   }
+
+//   // &__image {
+//   //   width: 100%;
+//   //   height: 80%;
+//   //   border-top-left-radius: 2.5px;
+//   //   border-top-right-radius: 2.5px;
+//   // }
+// }
+
+// .title {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 20%;
+//   width: 100%;
+
+//   background: $accent-color;
+//   &__heading {
+//     text-align: center;
+//     color: $primary-color;
+//     font-weight: 600;
+//   }
+// }
+
+// @media screen and (min-width: $breakpoint-tablet) {
+//   .card {
+//     width: 60vw;
+//     height: 40vh;
+//   }
+
+//   .title__heading {
+//     font-size: 3rem;
+//   }
+// }
+
+// @media screen and (min-width: $breakpoint-laptop) {
+//   .card {
+//     width: 25vw;
+//   }
+// }

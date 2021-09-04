@@ -3,7 +3,7 @@ import styles from "./Contact.module.scss";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const Contact = () => {
+const Contact = (props) => {
   const [isShowingEmail, setisShowingEmail] = useState(false);
 
   const setActiveEmail = () => {
@@ -26,7 +26,14 @@ const Contact = () => {
 
   return (
     <>
-      <section className={styles.contact} data-aos={"fade-up"}>
+      <motion.section
+        className={styles.contact}
+        initial="hidden"
+        animate="enter"
+        variants={props.variants}
+        // Smooth entrance
+        transition={{ type: "linear" }}
+      >
         <h3 className={styles.contact__heading}>Interested?</h3>
         <h4 className={styles.contact__subHeading}>
           Let's get this party started
@@ -52,7 +59,7 @@ const Contact = () => {
             </motion.a>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

@@ -1,48 +1,52 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./ProjectCard.module.scss";
-import { AnimateSharedLayout, motion } from "framer-motion";
-import ProjectCardExpanded from "../ProjectCardExpanded/ProjectCardExpanded";
+import { motion } from "framer-motion";
+import { FaGithub, FaPlay } from "react-icons/fa";
 
 const ProjectCard = (props) => {
   const { title, img, description, skills, githubUrl, hostedUrl, id } =
     props.project;
 
-  const [isOpen, setIsOpen] = useState(false);
+  const skillText = skills.map((skill, index) => {
+    return (
+      <p className={styles.card__skill} key={id + skill + index}>
+        {skill}
+      </p>
+    );
+  });
 
   return (
-    <AnimateSharedLayout>
-      {isOpen ? (
-        <ProjectCardExpanded
-          title={title}
-          img={img}
-          skills={skills}
-          description={description}
-          githubUrl={githubUrl}
-          hostedUrl={hostedUrl}
-          id={id}
-          setIsOpen={setIsOpen}
-          isOpen={isOpen}
-        />
-      ) : (
-        <div
-          onClick={() => setIsOpen(!isOpen)}
-          layoutId="expandable-card"
-          data-aos={"fade-up"}
-        >
-          <motion.article className={styles.card} layoutId="expandable-card-a">
-            <motion.img
-              className={styles.card__image}
-              src={img}
-              alt="project_thumbnail"
-              layoutId="expandable-card-i"
-            />
-            <div className={styles.title} layoutId="expandable-card-tc">
-              <motion.h2 className={styles.title__heading}>{title}</motion.h2>
-            </div>
-          </motion.article>
+    <article className={styles.card} style={{ backgroundImage: `url(${img})` }}>
+      <div className={styles.card__content}>
+        <div className={styles.card__heading}>
+          <h2 className={styles.card__title}>{title}</h2>
+          <div className={styles.card__buttons}>
+            <motion.a
+              href={githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className={styles.card__btn}
+            >
+              <FaGithub />
+            </motion.a>
+            <motion.a
+              href={hostedUrl}
+              target="_blank"
+              rel="noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className={styles.card__btn}
+            >
+              <FaPlay />
+            </motion.a>
+          </div>
         </div>
-      )}
-    </AnimateSharedLayout>
+        <p className={styles.card__body}>{description}</p>
+        <div className={styles.card__skills}>{skillText}</div>
+      </div>
+    </article>
   );
 };
 

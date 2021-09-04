@@ -2,11 +2,19 @@ import React from "react";
 import styles from "./Home.module.scss";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <>
-      <section className={styles.landingPage} data-aos={"fade-up"}>
+      <motion.section
+        className={styles.landingPage}
+        initial="hidden"
+        animate="enter"
+        variants={props.variants}
+        // Smooth entrance
+        transition={{ type: "linear" }}
+      >
         <div className={styles.title}>
           <h1 className={styles.title__heading}>ed hughes.</h1>
           <h3 className={styles.title__subHeading}>web developer.</h3>
@@ -16,7 +24,7 @@ const Home = () => {
             View my work <FaArrowRight className={styles.arrowSpan} />
           </Link>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

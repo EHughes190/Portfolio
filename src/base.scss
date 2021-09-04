@@ -10,10 +10,12 @@ $color-blue: #183153;
 $color-lightblue: #6f859b;
 
 //Breakpoints
+$breakpoint-md-phone: 360px;
 $breakpoint-lg-phone: 600px;
 $breakpoint-tablet: 768px;
 $breakpoint-laptop: 1024px;
 $breakpoint-laptop-lg: 1440px;
+$breakpoint-laptop-xl: 1600px;
 
 html {
   font: 400 62.5%/1.4 $font-main;
@@ -26,8 +28,12 @@ html {
   padding: 0px;
   box-sizing: border-box;
   font-family: $font-main;
-
   font-weight: 400;
+}
+
+body {
+  background-color: $primary-color;
+  color: $color-white;
 }
 
 ul {

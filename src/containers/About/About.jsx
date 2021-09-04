@@ -1,9 +1,17 @@
 import React from "react";
 import styles from "./About.module.scss";
+import { motion } from "framer-motion";
 
 const About = (props) => {
   return (
-    <section className={styles.about} data-aos={"fade-up"}>
+    <motion.section
+      className={styles.about}
+      initial="hidden"
+      animate="enter"
+      variants={props.variants}
+      // Smooth entrance
+      transition={{ type: "linear" }}
+    >
       <h3 className={styles.sectionHeading}>about</h3>
       <hr className={styles.line} />
       <div className={styles.about__grid}>
@@ -49,7 +57,7 @@ const About = (props) => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
