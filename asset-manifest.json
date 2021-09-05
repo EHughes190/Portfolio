@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6813c75c.chunk.css",
+    "main.css": "/Portfolio/static/css/main.5995acae.chunk.css",
     "main.js": "/Portfolio/static/js/main.f0986c48.chunk.js",
     "main.js.map": "/Portfolio/static/js/main.f0986c48.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.a06943a6.js",
@@ -10,7 +10,7 @@
     "static/js/3.babfe9a4.chunk.js": "/Portfolio/static/js/3.babfe9a4.chunk.js",
     "static/js/3.babfe9a4.chunk.js.map": "/Portfolio/static/js/3.babfe9a4.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.6813c75c.chunk.css.map": "/Portfolio/static/css/main.6813c75c.chunk.css.map",
+    "static/css/main.5995acae.chunk.css.map": "/Portfolio/static/css/main.5995acae.chunk.css.map",
     "static/js/2.1655c1b4.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.1655c1b4.chunk.js.LICENSE.txt",
     "static/media/Food-And-Stuff.313ea6ad.png": "/Portfolio/static/media/Food-And-Stuff.313ea6ad.png",
     "static/media/JS-Calculator.31ff0c44.png": "/Portfolio/static/media/JS-Calculator.31ff0c44.png",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.a06943a6.js",
     "static/js/2.1655c1b4.chunk.js",
-    "static/css/main.6813c75c.chunk.css",
+    "static/css/main.5995acae.chunk.css",
     "static/js/main.f0986c48.chunk.js"
   ]
 }
