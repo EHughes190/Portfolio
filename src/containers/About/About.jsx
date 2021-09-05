@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./About.module.scss";
 import { motion } from "framer-motion";
 
+//Props are passed from Routes
 const About = (props) => {
   return (
     <motion.section

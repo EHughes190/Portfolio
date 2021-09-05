@@ -27,9 +27,8 @@ const ProjectCard = (props) => {
               rel="noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className={styles.card__btn}
             >
-              <FaGithub />
+              <FaGithub className={styles.card__btn} />
             </motion.a>
             <motion.a
               href={hostedUrl}
@@ -37,9 +36,8 @@ const ProjectCard = (props) => {
               rel="noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className={styles.card__btn}
             >
-              <FaPlay />
+              <FaPlay className={styles.card__btn} />
             </motion.a>
           </div>
         </div>

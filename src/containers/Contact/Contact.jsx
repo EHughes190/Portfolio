@@ -3,6 +3,7 @@ import styles from "./Contact.module.scss";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+//Props are passed from Routes
 const Contact = (props) => {
   const [isShowingEmail, setisShowingEmail] = useState(false);
 

@@ -15,7 +15,9 @@
   }
 
   &:hover .card__title::after,
-  &:focus-within .card__title::after {
+  &:focus-within .card__title::after,
+  &:hover .card__buttons::after,
+  &:focus-within .card__buttons::after {
     transform: scaleX(1);
     transition-delay: 750ms;
   }
@@ -39,11 +41,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    //margin-bottom: 1rem;
   }
 
   &__title {
     position: relative;
     font-size: 1.5rem;
+    color: $color-white;
   }
 
   &__title::after {
@@ -56,27 +60,43 @@
     background: $accent-color;
     transform-origin: left;
     transition: transform 500ms ease;
+    border-radius: 0 5px 5px 0;
   }
 
   &__buttons {
-    width: 30%;
+    z-index: 1;
+    width: 25%;
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  &__buttons::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    height: 30px;
+    right: calc(1.5rem * -1);
+    bottom: 0;
+    width: calc(100% + 2rem);
+    background: $accent-color;
+    transform-origin: right;
+    transition: transform 500ms ease;
+    border-radius: 5px 0 0 5px;
   }
 
   &__btn {
     background: transparent;
-    color: $accent-color;
+    color: $primary-color;
     border: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     cursor: pointer;
-    //padding: 0 2.5px 0 30px;
   }
 
   &__body {
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
       0px 18px 23px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
@@ -128,23 +148,27 @@
     &__title::after {
       transform: scaleX(0);
     }
+
+    &__buttons::after {
+      transform: scaleX(0);
+    }
   }
 }
 
 @media screen and (min-width: $breakpoint-md-phone) {
   .card {
     width: 320px;
-    height: 360px;
+    height: 400px;
     &__content {
       padding: 40% 1.5rem 0;
     }
 
     &__title {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
 
     &__body {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
   }
 }
@@ -159,7 +183,7 @@
     }
 
     &__content {
-      padding: 30% 1.5rem 0;
+      padding: 35% 1.5rem 0;
     }
 
     &__body {

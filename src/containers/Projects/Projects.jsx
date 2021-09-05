@@ -4,6 +4,7 @@ import ProjectCard from "../../components/ProjectCard";
 import projects from "../../data/projects";
 import { motion } from "framer-motion";
 
+//Props are passed from Routes
 const Projects = (props) => {
   const projectsJSX = projects.map((projectObj) => (
     <ProjectCard project={projectObj} key={`project:${projectObj.id}`} />

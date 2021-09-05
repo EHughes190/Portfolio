@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+//Props are passed from Routes
 const Home = (props) => {
   return (
     <>
