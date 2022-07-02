@@ -3,7 +3,7 @@ import styles from "./About.module.scss";
 import { motion } from "framer-motion";
 
 //Props are passed from Routes
-const About = (props) => {
+export const About = (props) => {
   return (
     <motion.section
       className={styles.about}
@@ -61,5 +61,3 @@ const About = (props) => {
     </motion.section>
   );
 };
-
-export default About;

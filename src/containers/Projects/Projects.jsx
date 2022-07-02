@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Projects.module.scss";
-import ProjectCard from "../../components/ProjectCard";
+import { ProjectCard } from "../../components/index";
 import projects from "../../data/projects";
 import { motion } from "framer-motion";
 
 //Props are passed from Routes
-const Projects = (props) => {
+export const Projects = (props) => {
   const projectsJSX = projects.map((projectObj) => (
     <ProjectCard project={projectObj} key={`project:${projectObj.id}`} />
   ));
@@ -25,5 +25,3 @@ const Projects = (props) => {
     </motion.section>
   );
 };
-
-export default Projects;

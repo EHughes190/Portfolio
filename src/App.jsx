@@ -1,7 +1,7 @@
 // import { BrowserRouter as Router } from "react-router-dom";
 import { HashRouter as Router } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Routes from "./containers/Routes";
+import { Navbar } from "./components/index";
+import { Routes } from "./containers/index";
 
 function App() {
   return (

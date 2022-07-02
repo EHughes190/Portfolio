@@ -1,10 +1,6 @@
 import React from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
-import Home from "../Home";
-import About from "../About";
-import Contact from "../Contact";
-import Projects from "../Projects";
-//import NoMatch from "../NoMatch";
+import { Home, About, Contact, Projects } from "../index";
 import { AnimatePresence } from "framer-motion";
 
 //variants for animations
@@ -14,7 +10,7 @@ const variants = {
   exit: { opacity: 0, x: 0, y: -100 },
 };
 
-const Routes = () => {
+export const Routes = () => {
   const location = useLocation();
   return (
     <AnimatePresence
@@ -35,12 +31,7 @@ const Routes = () => {
         <Route path="/Contact">
           <Contact variants={variants} />
         </Route>
-        {/* <Route path="*">
-        <NoMatch />
-      </Route> */}
       </Switch>
     </AnimatePresence>
   );
 };
-
-export default Routes;

@@ -5,9 +5,9 @@ import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { motion } from "framer-motion";
-import Modal from "../Modal";
+import { Modal } from "../index";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [isOpen, setisOpen] = useState(false);
   const setActive = () => {
     setisOpen(!isOpen);
@@ -34,5 +34,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

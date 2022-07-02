@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 //Props are passed from Routes
-const Home = (props) => {
+export const Home = (props) => {
   return (
     <>
       <motion.section
@@ -29,5 +29,3 @@ const Home = (props) => {
     </>
   );
 };
-
-export default Home;

@@ -3,7 +3,7 @@ import styles from "./ProjectCard.module.scss";
 import { motion } from "framer-motion";
 import { FaGithub, FaPlay } from "react-icons/fa";
 
-const ProjectCard = (props) => {
+export const ProjectCard = (props) => {
   const { title, img, description, skills, githubUrl, hostedUrl, id } =
     props.project;
 
@@ -14,6 +14,8 @@ const ProjectCard = (props) => {
       </p>
     );
   });
+
+  const isHosted = hostedUrl ? true : false;
 
   return (
     <article className={styles.card} style={{ backgroundImage: `url(${img})` }}>
@@ -30,15 +32,17 @@ const ProjectCard = (props) => {
             >
               <FaGithub className={styles.card__btn} />
             </motion.a>
-            <motion.a
-              href={hostedUrl}
-              target="_blank"
-              rel="noreferrer"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <FaPlay className={styles.card__btn} />
-            </motion.a>
+            {isHosted && (
+              <motion.a
+                href={hostedUrl}
+                target="_blank"
+                rel="noreferrer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <FaPlay className={styles.card__btn} />
+              </motion.a>
+            )}
           </div>
         </div>
         <p className={styles.card__body}>{description}</p>
@@ -47,5 +51,3 @@ const ProjectCard = (props) => {
     </article>
   );
 };
-
-export default ProjectCard;

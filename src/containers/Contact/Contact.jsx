@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 //Props are passed from Routes
-const Contact = (props) => {
+export const Contact = (props) => {
   const [isShowingEmail, setisShowingEmail] = useState(false);
 
   const setActiveEmail = () => {
@@ -64,5 +64,3 @@ const Contact = (props) => {
     </>
   );
 };
-
-export default Contact;

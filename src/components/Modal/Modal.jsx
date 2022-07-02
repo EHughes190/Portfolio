@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { GrClose } from "react-icons/gr";
 
-const Modal = (props) => {
+export const Modal = (props) => {
   const { isOpen, setActive } = props;
 
   return (
@@ -103,5 +103,3 @@ const Modal = (props) => {
     </>
   );
 };
-
-export default Modal;
