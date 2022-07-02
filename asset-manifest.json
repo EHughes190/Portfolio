@@ -1,30 +1,26 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.5995acae.chunk.css",
-    "main.js": "/Portfolio/static/js/main.f0986c48.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.f0986c48.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.a06943a6.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.a06943a6.js.map",
-    "static/js/2.1655c1b4.chunk.js": "/Portfolio/static/js/2.1655c1b4.chunk.js",
-    "static/js/2.1655c1b4.chunk.js.map": "/Portfolio/static/js/2.1655c1b4.chunk.js.map",
-    "static/js/3.babfe9a4.chunk.js": "/Portfolio/static/js/3.babfe9a4.chunk.js",
-    "static/js/3.babfe9a4.chunk.js.map": "/Portfolio/static/js/3.babfe9a4.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.07938c5a.chunk.css",
+    "main.js": "/Portfolio/static/js/main.be2ccb7c.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.be2ccb7c.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.0dd55e35.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.0dd55e35.js.map",
+    "static/js/2.649da7a9.chunk.js": "/Portfolio/static/js/2.649da7a9.chunk.js",
+    "static/js/2.649da7a9.chunk.js.map": "/Portfolio/static/js/2.649da7a9.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.5995acae.chunk.css.map": "/Portfolio/static/css/main.5995acae.chunk.css.map",
-    "static/js/2.1655c1b4.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.1655c1b4.chunk.js.LICENSE.txt",
+    "static/css/main.07938c5a.chunk.css.map": "/Portfolio/static/css/main.07938c5a.chunk.css.map",
+    "static/js/2.649da7a9.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.649da7a9.chunk.js.LICENSE.txt",
     "static/media/Food-And-Stuff.313ea6ad.png": "/Portfolio/static/media/Food-And-Stuff.313ea6ad.png",
     "static/media/JS-Calculator.31ff0c44.png": "/Portfolio/static/media/JS-Calculator.31ff0c44.png",
     "static/media/Morse-Translator.164c40ed.png": "/Portfolio/static/media/Morse-Translator.164c40ed.png",
     "static/media/Next-News.afb9bde4.png": "/Portfolio/static/media/Next-News.afb9bde4.png",
     "static/media/Punk-API.9dca2650.png": "/Portfolio/static/media/Punk-API.9dca2650.png",
-    "static/media/SCI-MX.2a72a222.png": "/Portfolio/static/media/SCI-MX.2a72a222.png",
-    "static/media/Ticket-Tracker.fe2213cd.png": "/Portfolio/static/media/Ticket-Tracker.fe2213cd.png",
-    "static/media/tennis-ball.0130b74b.png": "/Portfolio/static/media/tennis-ball.0130b74b.png"
+    "static/media/go.7e110e74.png": "/Portfolio/static/media/go.7e110e74.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a06943a6.js",
-    "static/js/2.1655c1b4.chunk.js",
-    "static/css/main.5995acae.chunk.css",
-    "static/js/main.f0986c48.chunk.js"
+    "static/js/runtime-main.0dd55e35.js",
+    "static/js/2.649da7a9.chunk.js",
+    "static/css/main.07938c5a.chunk.css",
+    "static/js/main.be2ccb7c.chunk.js"
   ]
 }
